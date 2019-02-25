@@ -15,10 +15,11 @@ List Schema
 - Description
 - Item (Array of Movies)
 
+
 2. Item (Movie)
 - Create
 - Read
-~~-Update~~
+- ~~-Update~~
 - Delete
 
 Item Schema  
@@ -29,17 +30,17 @@ Item Schema
 
 # Three Tier Plan
 
-* Bronze
+### Bronze
 - Built it with feathers
 - Build List (w/ CRUD) and Item (w/ CRD) models
 - Use a seed file
 
-* Silver
+### Silver
 - Add Movie API
 - Add poster images
 
-* Gold
-- Include IMDB API
+### Gold
+- Include Imdb API
 - People can comment on the movie and give their own ratings
 - Add user authentication
 
