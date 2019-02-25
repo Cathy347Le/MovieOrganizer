@@ -7,7 +7,7 @@ An app that lets you create a Watch List of movies you want to watch or Movie Co
 1. List (MovieList)
 - Create
 - Read
-- Udpate
+- Update
 - Delete
 
 List Schema  
@@ -31,7 +31,7 @@ Item Schema
 
 * Bronze
 - Built it with feathers
-- Build List with CRUD and Item CRD models
+- Build List (w/ CRUD) and Item (w/ CRD) models
 - Use a seed file
 
 * Silver
