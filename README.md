@@ -5,15 +5,44 @@ An app that lets you create a Watch List of movies you want to watch or Movie Co
 # Models
 
 1. List (MovieList)
-Create
-Read
-Udpate
-Delete
+- Create
+- Read
+- Udpate
+- Delete
 
+List Schema  
+- Title
+- Description
+- Item (Array of Movies)
 
 2. Item (Movie)
-Create
-Read
+- Create
+- Read
 ~~-Update~~
-Delete
+- Delete
+
+Item Schema  
+- Title
+- Genre (only one allowed)
+- Imdb rating
+
+
+# Three Tier Plan
+
+* Bronze
+- Built it with feathers
+- Build List with CRUD and Item CRD models
+- Use a seed file
+
+* Silver
+- Add Movie API
+- Add poster images
+
+* Gold
+- Include IMDB API
+- People can comment on the movie and give their own ratings
+- Add user authentication
+
+
+
 
