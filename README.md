@@ -34,6 +34,8 @@ Item Schema
 
 ### Bronze
 
+# <<<<<<< HEAD
+
 - Build List (w/ CRUD) and Item (w/ CRD) models
 - Use a seed file
 
@@ -47,3 +49,5 @@ Item Schema
 - Include Imdb API
 - People can comment on the movie and give their own ratings
 - Add user authentication
+  <<<<<<< HEAD
+  =======
