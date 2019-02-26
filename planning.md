@@ -33,3 +33,10 @@ Steps
 
 - Scaffold out controllers
 - test controllers
+- commit
+
+- built movie model
+- build new movie controller
+- build create movie controller
+- build show movie controller
+- build delete movie controller
