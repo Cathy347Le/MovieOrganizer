@@ -12,8 +12,6 @@ app.set("view engine", "hbs");
 app.use(parser.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 
-app.get("/", function(req, res) {
-  res.send("Hello world");
-});
+app.use(require("./routes/index"));
 
 app.listen(7000, () => console.log("listening on port 7000"));

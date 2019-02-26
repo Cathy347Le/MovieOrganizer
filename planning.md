@@ -25,3 +25,11 @@ Steps
 - create a port
 - run nodemom
 - commit
+
+- create file system for movie (follow MVC, db)
+- set up routes
+- test routes
+- commit
+
+- Scaffold out controllers
+- test controllers
