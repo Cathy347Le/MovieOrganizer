@@ -37,6 +37,7 @@ Steps
 
 - built movie model
 - build new movie controller
+- create view for new movie
 - build create movie controller
 - build show movie controller
 - build delete movie controller

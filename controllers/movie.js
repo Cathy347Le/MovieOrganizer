@@ -1,6 +1,6 @@
 module.exports = {
   new: (req, res) => {
-    console.log("new movie");
+    res.render("movie/new");
   },
   create: (req, res) => {
     console.log("create movie");

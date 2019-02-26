@@ -4,7 +4,7 @@ const movieController = require("../controllers/movie");
 
 //route for home page
 router.get("/", function(req, res) {
-  res.send("Home page");
+  res.render("index");
 });
 
 //route for movie resource
