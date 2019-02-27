@@ -48,5 +48,7 @@ Movie.remove({}).then(function() {
     genre: "Action",
     year: 2017,
     rating: 7.5
+  }).then(movies => {
+    movies.save(err => console.log(err));
   });
 });

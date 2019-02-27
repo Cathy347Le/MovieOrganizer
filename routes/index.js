@@ -1,14 +1,38 @@
 const express = require("express");
 const router = express.Router();
-const Movie = require("../models/movie");
+const { List } = require("../models/list");
+const { Movie } = require("../models/list");
+const listController = require("../controllers/list");
 const movieController = require("../controllers/movie");
 
 //route for home page
+// router.get("/", function(req, res) {
+//   Movie.find({}).then(movies => {
+//     res.render("index", { movies });
+//   });
+// });
+
 router.get("/", function(req, res) {
-  Movie.find({}).then(movies => {
-    res.render("index", { movies });
+  List.find({}).then(lists => {
+    Movie.find({}).then(movies => {
+      res.render("index", { lists, movies });
+    });
   });
 });
+
+// router.get("/", function(req, res) {
+//   List.find({}).then(lists => {
+//     res.render("index", { lists });
+//   });
+// });
+
+//route for List resource
+// router.get("/list/new", listController.new);
+// router.post("/list", listController.create);
+// router.get("/list/:id", listController.show);
+// router.get("list/:id/edit", listController.edit);
+// router.put("list/:id", listController.update);
+// router.delete("/list/:id", listController.delete);
 
 //route for movie resource
 router.get("/movie/new", movieController.new);

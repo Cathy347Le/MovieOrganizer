@@ -2,6 +2,23 @@
 <br>
 <br>
 <div class="container">
+    {{#if lists}}
+    <div>
+        {{#each lists}}
+        <div>
+            <a href="/list/{{id}}">Title: {{title}}</a>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+</div>
+
+{{!-- </div>
+<a href="/movie/new"> Add Movie</a>
+</div> --}}
+<br>
+<br>
+<div class="container">
     {{#if movies}}
     <div>
         {{#each movies}}
