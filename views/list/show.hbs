@@ -1,9 +1,30 @@
 <h1>{{list.title}}</h1>
 <p>{{list.description}}</p>
 
+
+<br>
+<br>
+<div class="container">
+    {{#if list.movies}}
+    <div>
+        {{#each list.movies}}
+        <div>
+            <p> Title: {{list.movies.title}}</p>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+</div>
+
+</div>
+<a href="/movie/new"> Add Movie</a>
+</div>
+
+
+
 <form action="/list/{{list.id}}/edit">
     <p>
-        <input type="submit" value="Edit">
+        <input type="submit" value="Edit List">
     </p>
 </form>
 
