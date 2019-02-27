@@ -19,7 +19,9 @@ module.exports = {
     });
   },
   edit: (req, res) => {
-    res.send("edit list page");
+    List.findById(req.params.id).then(list => {
+      res.render("list/edit", { list });
+    });
   },
   update: (req, res) => {
     res.redirect("/");
