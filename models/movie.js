@@ -15,7 +15,7 @@ const MovieSchema = new mongoose.Schema({
     ]
   },
   year: Number,
-  imdbrating: { type: Number, min: 0, max: 10 }
+  rating: Number
 });
 
 module.exports = mongoose.model("Movie", MovieSchema);

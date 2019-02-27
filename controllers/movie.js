@@ -5,19 +5,19 @@ module.exports = {
     res.render("movie/new");
   },
   create: (req, res) => {
-    const { title, genre, year, imdbrating } = req.body;
+    const { title, genre, year, rating } = req.body;
     Movie.create({
       title,
       genre,
       year,
-      imdbrating
+      rating
     }).then(movie => {
       res.redirect(`/movie/${movie.id}`);
     });
   },
   show: (req, res) => {
     Movie.findById(req.params.id).then(movie => {
-      res.render("/movie/show", { movie });
+      res.render("movie/show", { movie });
     });
   },
   delete: (req, res) => {
