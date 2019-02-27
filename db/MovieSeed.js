@@ -48,6 +48,24 @@ Movie.remove({}).then(function() {
     genre: "Action",
     year: 2017,
     rating: 7.5
+  });
+  Movie.create({
+    title: "Bohemian Rhapsody",
+    genre: "Drama",
+    year: 2018,
+    rating: 8.1
+  });
+  Movie.create({
+    title: "A Star is Born",
+    genre: "Drama",
+    year: 2018,
+    rating: 7.9
+  });
+  Movie.create({
+    title: "Jack Frost",
+    genre: "Drama",
+    year: 1998,
+    rating: 5.3
   }).then(movies => {
     movies.save(err => console.log(err));
   });
