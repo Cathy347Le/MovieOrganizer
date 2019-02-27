@@ -1,12 +1,24 @@
+const Movie = require("../models/movie");
+
 module.exports = {
   new: (req, res) => {
     res.render("movie/new");
   },
   create: (req, res) => {
-    console.log("create movie");
+    const { title, genre, year, imdbrating } = req.body;
+    Movie.create({
+      title,
+      genre,
+      year,
+      imdbrating
+    }).then(movie => {
+      res.redirect(`/movie/${movie.id}`);
+    });
   },
   show: (req, res) => {
-    console.log("show movie");
+    Movie.findById(req.params.id).then(movie => {
+      res.render("/movie/show", { movie });
+    });
   },
   delete: (req, res) => {
     console.log("delete movie");

@@ -37,10 +37,11 @@ Steps
 
 - built movie model
 - build new movie controller
+- create view for new movie
 - commit
 - add connection js file to db
 - create seed file
-- create view for new movie
+- commit
 - build create movie controller
 - build show movie controller
 - build delete movie controller
