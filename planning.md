@@ -23,7 +23,7 @@ Steps
 - require Express, hbs, body-parser, methodOverride, mongoose
 - Send Hello World to the homepage
 - create a port
-- run nodemom
+- run nodemon
 - commit
 
 - create file system for movie (follow MVC, db)
