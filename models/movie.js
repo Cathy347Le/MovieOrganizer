@@ -1,12 +1,21 @@
 const mongoose = require("../db/connection");
 
-const Movie = new mongoose.Schema({
-  Title: String,
-  Genre: {
+const MovieSchema = new mongoose.Schema({
+  title: String,
+  genre: {
     type: String,
-    enum: ["Action", "Animation", "Comedy", "Drama", "Horror", "Romance"],
-    ImbdRating: { type: Number, min: 0, max: 10 }
-  }
+    enum: [
+      "Action",
+      "Animation",
+      "Comedy",
+      "Documentary",
+      "Drama",
+      "Horror",
+      "Romance"
+    ]
+  },
+  year: Number,
+  imdbrating: { type: Number, min: 0, max: 10 }
 });
 
-module.exports = mongoose.model("Movie", Movie);
+module.exports = mongoose.model("Movie", MovieSchema);

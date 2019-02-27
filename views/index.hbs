@@ -1,3 +1,17 @@
+<br>
+<br>
+<div class="container">
+    {{#if movies}}
+    <div>
+        {{#each movies}}
+        <div>
+            <a href="/movie/{{id}}">Title: {{title}}</a>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+</div>
+
 </div>
 <a href="/movie/new"> Add Movie</a>
 </div>

@@ -1,10 +1,13 @@
 const express = require("express");
 const router = express.Router();
+const Movie = require("../models/movie");
 const movieController = require("../controllers/movie");
 
 //route for home page
 router.get("/", function(req, res) {
-  res.render("index");
+  Movie.find({}).then(movies => {
+    res.render("index", { movies });
+  });
 });
 
 //route for movie resource
