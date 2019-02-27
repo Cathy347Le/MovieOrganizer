@@ -55,5 +55,9 @@ Steps
 * set up routes (test one for hello world)
 * test routes
 * scaffold controllers (test one for hello world)
-* Built show list feature
-* Test to see if movie show in a list
+* Built/test new list feature
+* Built/test show list feature
+* Built/test create list feature
+* Built/test update list feature
+* Built/test delete list feature
+* Get movies to show in list
