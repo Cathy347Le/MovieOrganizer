@@ -27,12 +27,12 @@ router.get("/", function(req, res) {
 // });
 
 //route for List resource
-// router.get("/list/new", listController.new);
-// router.post("/list", listController.create);
-// router.get("/list/:id", listController.show);
-// router.get("list/:id/edit", listController.edit);
-// router.put("list/:id", listController.update);
-// router.delete("/list/:id", listController.delete);
+router.get("/list/new", listController.new);
+router.post("/list", listController.create);
+router.get("/list/:id", listController.show);
+router.get("/list/:id/edit", listController.edit);
+router.put("/list/:id", listController.update);
+router.delete("/list/:id", listController.delete);
 
 //route for movie resource
 router.get("/movie/new", movieController.new);
