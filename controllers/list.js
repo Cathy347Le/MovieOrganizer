@@ -29,6 +29,9 @@ module.exports = {
     });
   },
   delete: (req, res) => {
-    res.redirect("/");
+    List.remove({ _id: req.params.id }).then(list => {
+      console.log(list);
+      res.redirect("/");
+    });
   }
 };
