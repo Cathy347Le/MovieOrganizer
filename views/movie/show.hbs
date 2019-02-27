@@ -3,4 +3,12 @@
 <p>IMDb Rating: {{movie.rating}}</p>
 
 
+<form action="/movie/{{movie.id}}?_method=DELETE" method="post">
+    <input type="submit" value="Delete">
+</form>
+
+<form action="/">
+    <input type="submit" value="Home">
+</form>
+
 {{!-- Add button to go back home or back to list--}}

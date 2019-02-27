@@ -14,11 +14,11 @@ router.get("/", function(req, res) {
 router.get("/movie/new", movieController.new);
 router.post("/movie", movieController.create);
 router.get("/movie/:id", movieController.show);
-router.get("/movie/:id", movieController.delete);
+router.delete("/movie/:id", movieController.delete);
 
 //Send 404 status for all other routes
-router.all("*", function(req, res) {
-  res.status(404).send();
-});
+// router.all("*", function(req, res) {
+//   res.status(404).send();
+// });
 
 module.exports = router;

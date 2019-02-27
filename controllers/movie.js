@@ -21,6 +21,9 @@ module.exports = {
     });
   },
   delete: (req, res) => {
-    console.log("delete movie");
+    Movie.remove({ _id: req.params.id }).then(movie => {
+      console.log(movie);
+      res.redirect("/");
+    });
   }
 };

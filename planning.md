@@ -44,4 +44,6 @@ Steps
 - commit
 - build create movie controller
 - build show movie controller
+- commit
 - build delete movie controller
+- commit
