@@ -47,3 +47,13 @@ Steps
 - commit
 - build delete movie controller
 - commit
+- test movie resource for CRD
+- commit
+
+* build List model - movie becomes a key value pair
+* create seed file that includes Movies as a child in List
+* set up routes (test one for hello world)
+* test routes
+* scaffold controllers (test one for hello world)
+* Built show list feature
+* Test to see if movie show in a list
