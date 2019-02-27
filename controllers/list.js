@@ -24,7 +24,9 @@ module.exports = {
     });
   },
   update: (req, res) => {
-    res.redirect("/");
+    List.findByIdAndUpdate(req.params.id, req.body).then(list => {
+      res.redirect(`/list/${list.id}`);
+    });
   },
   delete: (req, res) => {
     res.redirect("/");
