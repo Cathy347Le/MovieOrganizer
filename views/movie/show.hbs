@@ -2,9 +2,9 @@
     <div class="col s12 m7">
         <div class="card">
             <div class="card-image">
-                <img src="{{ movie.image }} alt=" {{movie.image}}>
+                <img src="{{ movie.image }}" alt="{{movie.image}}">
             </div>
-            <div class="card-action">
+            <div class=" card-action">
                 <p>{{movie.title}} ({{movie.year}})</p>
                 <p>IMDb Rating: {{movie.rating}}</p>
             </div>
@@ -15,8 +15,4 @@
 
 <form action="/movie/{{movie.id}}?_method=DELETE" method="post">
     <input type="submit" value="Delete">
-</form>
-
-<form action="/">
-    <input type="submit" value="Home">
 </form>

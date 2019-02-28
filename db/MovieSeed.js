@@ -5,7 +5,9 @@ Movie.remove({}).then(function() {
     title: "Aquaman",
     genre: "Action",
     year: 2018,
-    rating: 7.3
+    rating: 7.3,
+    image:
+      "https://image.tmdb.org/t/p/w370_and_h556_bestv2/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg"
   });
   Movie.create({
     title: "Love Actually",

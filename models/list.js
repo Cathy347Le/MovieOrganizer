@@ -17,14 +17,14 @@ const MovieSchema = new mongoose.Schema({
     ]
   },
   year: Number,
-  rating: Number
+  rating: Number,
+  image: String
 });
 
 const ListSchema = new mongoose.Schema({
   title: String,
   description: String,
-  movies: [MovieSchema],
-  image: String
+  movies: [MovieSchema]
 });
 
 module.exports = {
