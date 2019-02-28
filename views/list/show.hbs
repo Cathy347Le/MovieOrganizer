@@ -1,15 +1,13 @@
 <h1>{{list.title}}</h1>
 <p>{{list.description}}</p>
-
-
 <br>
 <br>
 <div class="container">
-    {{#if list.movies}}
+    {{#if list}}
     <div>
-        {{#each list.movies}}
+        {{#each list}}
         <div>
-            <p> Title: {{list.movies.title}}</p>
+            <p> Title: {{movies.titles}}</p>
         </div>
         {{/each}}
     </div>
@@ -17,7 +15,7 @@
 </div>
 
 </div>
-<a href="/movie/new"> Add Movie</a>
+<a href="/list/{{list.id}}/movie/new"> Add Movie</a>
 </div>
 
 

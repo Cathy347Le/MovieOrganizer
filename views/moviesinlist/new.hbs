@@ -1,0 +1,19 @@
+<form action="/list/:id" method="post">
+    <p>
+        <label for="title">Blah:</label>
+        <input type="text" name="title">
+    </p>
+    <p>
+        <label for="genre">Genre:</label>
+        <input type="text" name="genre">
+    </p>
+    <p>
+        <label for="year">Year:</label>
+        <input type="number" name="year">
+    </p>
+    <p>
+        <label for="rating">IMDb Rating:</label>
+        <input type="number" name="rating" min="0" step=".1" Placeholder="0.0 out of 10.0">
+        <input type="submit" value="Save">
+    </p>
+</form>

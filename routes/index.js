@@ -4,6 +4,7 @@ const { List } = require("../models/list");
 const { Movie } = require("../models/list");
 const listController = require("../controllers/list");
 const movieController = require("../controllers/movie");
+const listMovieController = require("../controllers/moviesinlist");
 
 //route for home page
 // router.get("/", function(req, res) {
@@ -26,6 +27,12 @@ router.get("/", function(req, res) {
 //   });
 // });
 
+//route for movie resource
+router.get("/movie/new", movieController.new);
+router.post("/movie", movieController.create);
+router.get("/movie/:id", movieController.show);
+router.delete("/movie/:id", movieController.delete);
+
 //route for List resource
 router.get("/list/new", listController.new);
 router.post("/list", listController.create);
@@ -34,11 +41,9 @@ router.get("/list/:id/edit", listController.edit);
 router.put("/list/:id", listController.update);
 router.delete("/list/:id", listController.delete);
 
-//route for movie resource
-router.get("/movie/new", movieController.new);
-router.post("/movie", movieController.create);
-router.get("/movie/:id", movieController.show);
-router.delete("/movie/:id", movieController.delete);
+//route for adding movie in List
+// router.get("/list/:id/movie/new", listMovieController.new);
+router.get("/list/:id/movie/new", listMovieController.new);
 
 //Send 404 status for all other routes
 // router.all("*", function(req, res) {

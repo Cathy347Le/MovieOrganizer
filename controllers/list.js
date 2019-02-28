@@ -15,6 +15,10 @@ module.exports = {
   },
   show: (req, res) => {
     List.findById(req.params.id).then(list => {
+      console.log(list);
+      console.log(list.movies[0].title);
+      console.log(list.movies[1].title);
+      console.log(list.movies[2].title);
       res.render("list/show", { list });
     });
   },
