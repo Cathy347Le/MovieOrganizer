@@ -15,10 +15,10 @@ module.exports = {
   },
   show: (req, res) => {
     List.findById(req.params.id).then(list => {
-      console.log(list);
-      console.log(list.movies[0].title);
-      console.log(list.movies[1].title);
-      console.log(list.movies[2].title);
+      // console.log(list);
+      // console.log(list.movies[0].title);
+      // console.log(list.movies[1].title);
+      // console.log(list.movies[2].title);
       res.render("list/show", { list });
     });
   },
@@ -38,22 +38,23 @@ module.exports = {
       res.redirect("/");
     });
   },
-  newmovie: (req, res) => {
-    res.render("list/newmovie");
+  newMovie: (req, res) => {
+    res.render("list/newmovie", { listId: req.params.id });
   },
-  createmovie: (req, res) => {
+  createMovie: function(req, res, next) {
+    // console.log("hi");
+    // console.log(req.body);
     const createMovie = {
       title: req.body.title,
       genre: req.body.genre,
       year: req.body.year,
       rating: req.body.rating
     };
-    List.update(
-      { title: req.session.list },
-      { $push: { movies: createMovie } },
-      { upsert: true }
+    List.findOneAndUpdate(
+      { _id: req.params.id },
+      { $push: { movies: createMovie } }
     ).then(list => {
-      res.redirect(`/list/${list.id}`);
+      res.redirect(`/list/${list._id}`);
     });
   }
 };
