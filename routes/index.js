@@ -42,6 +42,7 @@ router.delete("/list/:id", listController.delete);
 //route for adding movie in List
 router.get("/list/:id/movie/new", listController.newMovie);
 router.post("/list/:id/movie", listController.createMovie);
+// router.post("/list/:id/movie/:id", listController.showMovie);
 
 //Send 404 status for all other routes
 // router.all("*", function(req, res) {
