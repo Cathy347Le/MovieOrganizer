@@ -4,8 +4,6 @@ const { List } = require("../models/list");
 const { Movie } = require("../models/list");
 const listController = require("../controllers/list");
 const movieController = require("../controllers/movie");
-const listMovieController = require("../controllers/moviesinlist");
-
 //route for home page
 // router.get("/", function(req, res) {
 //   Movie.find({}).then(movies => {
@@ -43,7 +41,8 @@ router.delete("/list/:id", listController.delete);
 
 //route for adding movie in List
 // router.get("/list/:id/movie/new", listMovieController.new);
-router.get("/list/:id/movie/new", listMovieController.new);
+router.get("/list/:id/newmovie", listController.newmovie);
+router.get("/list/:id", listController.createmovie);
 
 //Send 404 status for all other routes
 // router.all("*", function(req, res) {

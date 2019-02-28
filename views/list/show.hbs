@@ -5,9 +5,9 @@
 <div class="container">
     {{#if list}}
     <div>
-        {{#each list}}
+        {{#each list.movies}}
         <div>
-            <p> Title: {{movies.titles}}</p>
+            <p> Title: {{title}}</p>
         </div>
         {{/each}}
     </div>
@@ -15,7 +15,7 @@
 </div>
 
 </div>
-<a href="/list/{{list.id}}/movie/new"> Add Movie</a>
+<a href="/list/{{list.id}}/newmovie"> Add Movie</a>
 </div>
 
 
