@@ -58,24 +58,3 @@ module.exports = {
     });
   }
 };
-
-// res.redirect(`list/${list.id}`);
-
-// people: {
-//   name: String,
-//     friends: [{ firstName: String, lastName: String }]
-// }
-
-// exports.addFriend = function (req, res, next) {
-//   var friend = { "firstName": req.body.fName, "lastName": req.body.lName };
-//   Users.findOneAndUpdate({ name: req.user.name }, { $push: { friends: friend } });
-
-//   create: (req, res) => {
-//     const { title, description } = req.body;
-//     List.create({
-//       title,
-//       description
-//     }).then(list => {
-//       res.redirect(`list/${list.id}`);
-//     });
-// };
