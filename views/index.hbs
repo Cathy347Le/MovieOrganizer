@@ -1,33 +1,9 @@
-<br>
-<br>
-<div class="container">
-    {{#if lists}}
-    <div>
-        {{#each lists}}
-        <div>
-            <a href="/list/{{id}}">Title: {{title}}</a>
-        </div>
-        {{/each}}
-    </div>
-    {{/if}}
-</div>
-</div>
-{{!-- <a href="/list/new"> Add List</a> --}}
-</div>
-<br>
-<br>
-<div class="container">
+<div>
     {{#if movies}}
     <div>
         {{#each movies}}
-        <div>
-            <a href="/movie/{{id}}">Title: {{title}}</a>
-        </div>
+        {{> 'movie'}}
         {{/each}}
     </div>
     {{/if}}
-</div>
-
-</div>
-{{!-- <a href="/movie/new"> Add Movie</a> --}}
 </div>

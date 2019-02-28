@@ -4,25 +4,37 @@ const { List } = require("../models/list");
 const { Movie } = require("../models/list");
 const listController = require("../controllers/list");
 const movieController = require("../controllers/movie");
+
 //route for home page
-// router.get("/", function(req, res) {
-//   Movie.find({}).then(movies => {
-//     res.render("index", { movies });
-//   });
-// });
-
-router.get("/", function(req, res) {
-  List.find({}).then(lists => {
-    Movie.find({}).then(movies => {
-      res.render("index", { lists, movies });
-    });
-  });
-});
-
 // router.get("/", function(req, res) {
 //   List.find({}).then(lists => {
 //     res.render("index", { lists });
 //   });
+// });
+
+// router.get("/", function(req, res) {
+//   List.find({}).then(lists => {
+//     Movie.find({}).then(movies => {
+//       res.render("index", { lists, movies });
+//     });
+//   });
+// });
+
+//route for home page
+router.get("/", function(req, res) {
+  Movie.find({})
+    .sort({ title: 1 })
+    .then(movies => {
+      res.render("index", { movies });
+    });
+});
+
+// router.get("/", function(req, res) {
+//   Movie.find({})
+//     .sort({ title: 1 })
+//     .then(movies => {
+//       res.render("index", { movies });
+//     });
 // });
 
 //route for movie resource

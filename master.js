@@ -7,8 +7,10 @@ const express = require("express");
 const app = express();
 const parser = require("body-parser");
 const methodOverride = require("method-override");
+const hbs = require("hbs");
 
 app.set("view engine", "hbs");
+hbs.registerPartials(__dirname + "/views/partials");
 app.use(parser.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.use(express.static("public"));
