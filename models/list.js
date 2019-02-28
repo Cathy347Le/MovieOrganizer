@@ -23,7 +23,8 @@ const MovieSchema = new mongoose.Schema({
 const ListSchema = new mongoose.Schema({
   title: String,
   description: String,
-  movies: [MovieSchema]
+  movies: [MovieSchema],
+  image: String
 });
 
 module.exports = {
