@@ -1,53 +1,54 @@
 # MovieOrganizer
 
-An app that lets you create a Watch List of movies you want to watch or Movie Collection list to manage your entire movie collection.
+# Description
+
+Movie Organizer is a full-stack web application built with MongoDB, Express, Handlebars, and Node (MEHN). The app allows users to create movie lists to manage movies they love, want to watch, or just to catalogue their entire movie collection.
 
 # Models
 
-1. List (MovieList)
-
-- Create
-- Read
-- Update
-- Delete
-
-List Schema
+1. List (Full CRUD)
 
 - Title
 - Description
-- Item (Array of Movies)
+- Movie [Accepts array of movies]
 
-2. Item (Movie)
-
-- Create
-- Read
-- ~~-Update~~
-- Delete
-
-Item Schema
+2. Movie (CRD only)
 
 - Title
 - Genre (only one allowed)
-- Imdb rating
+- Rating (IMDb)
 
-# Three Tier Plan
+# Deployed app
 
-### Bronze
+The app is deployed on Heroku:
 
-# <<<<<<< HEAD
+# Technologies Used
 
-- Build List (w/ CRUD) and Item (w/ CRD) models
-- Use a seed file
+This app was built with MongoDB, Express, Handlebars, and Node (MEHN Stack). The database used for live deployment is MongoDB Atlas.
 
-### Silver
+#The approach taken
 
-- Add Movie API
-- Add poster images
+#Install and Run Locally
 
-### Gold
+The app is active and running in Heroku, but if you want to run it locally
 
-- Include Imdb API
-- People can comment on the movie and give their own ratings
-- Add user authentication
-  <<<<<<< HEAD
-  =======
+1. Fork and clone this repository
+2. Run npm install in the foot folder
+
+3. Seed the list and movie files first, in that specfic order
+
+4. Start up the server
+
+#Unsolved Issues
+
+- Incorporating best practice to reference my movies in my list
+- Fix my movie cards on the homepage so they are all the same height
+
+#Additional Features to add:
+
+- Incorporate a Movie API - www.themoviedb.org
+- Set up my new movie form to allow image url
+- Authentication with flash messages
+- Add show and delete action when adding movies to my list
+- Add Search movie option
+- Update Lists model to reference my movie model
