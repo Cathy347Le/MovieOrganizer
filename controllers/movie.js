@@ -27,4 +27,15 @@ module.exports = {
       res.redirect("/");
     });
   }
+  // movieRating: (req, res) => {
+  //   console.log("Hello");
+  // }
 };
+
+// rating: (req, res) => {
+//   Movie.find({})
+//     .sort({ rating: "asc" })
+//     .then(movies => {
+//       res.render("index", { movies });
+//     });
+// }
