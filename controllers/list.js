@@ -1,6 +1,11 @@
 const { List } = require("../models/list");
 
 module.exports = {
+  index: (req, res) => {
+    List.find({}).then(lists => {
+      res.render("list/index", { lists });
+    });
+  },
   new: (req, res) => {
     res.render("list/new");
   },

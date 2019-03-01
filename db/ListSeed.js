@@ -4,7 +4,7 @@ const { Movie } = require("../models/list");
 List.find({}).remove(() => {
   Movie.find({}).remove(() => {
     let RecentList = List.create({
-      title: "Recent movies to watch",
+      title: "Recent movies",
       description: "Recent movies I want to watch"
     }).then(list => {
       Promise.all([
@@ -37,7 +37,7 @@ List.find({}).remove(() => {
       });
     });
     let OldieList = List.create({
-      title: "Old movies to watch",
+      title: "Old movies",
       description: "Old movies I want to watch"
     }).then(list => {
       Promise.all([

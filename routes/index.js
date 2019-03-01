@@ -20,7 +20,7 @@ const movieController = require("../controllers/movie");
 //   });
 // });
 
-//route for home page
+//route for home page, which displays all the movies
 router.get("/", function(req, res) {
   Movie.find({})
     .sort({ title: 1 })
@@ -29,6 +29,7 @@ router.get("/", function(req, res) {
     });
 });
 
+//route to display all the movies my imbd ratings
 router.get("/rate", function(req, res) {
   Movie.find({})
     .sort({ rating: "desc" })
@@ -54,9 +55,9 @@ router.get("/movie/new", movieController.new);
 router.post("/movie", movieController.create);
 router.get("/movie/:id", movieController.show);
 router.delete("/movie/:id", movieController.delete);
-// router.get("/rate", movieController.movieRating);
 
 //route for List resource
+router.get("/list", listController.index);
 router.get("/list/new", listController.new);
 router.post("/list", listController.create);
 router.get("/list/:id", listController.show);

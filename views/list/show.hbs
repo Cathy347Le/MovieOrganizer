@@ -1,7 +1,6 @@
 <h1>{{list.title}}</h1>
 <p>{{list.description}}</p>
 <br>
-<br>
 <div class="container">
     {{#if list}}
     <div>
@@ -29,9 +28,3 @@
 <form action="/list/{{list.id}}?_method=DELETE" method="post">
     <input type="submit" value="Delete">
 </form>
-
-<form action="/">
-    <input type="submit" value="Home">
-</form>
-
-{{!-- Add button to go back home or back to list --}}

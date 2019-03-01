@@ -1,0 +1,13 @@
+<h2>My Movie List:</h2>
+<br>
+<div class="container">
+    {{#if lists}}
+    <div>
+        {{#each lists}}
+        <div>
+            <a href="/list/{{id}}">Title: {{title}}</a>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+</div>
