@@ -4,6 +4,7 @@
   "description": "An app that lets you create a Watch List of movies you want to watch or Movie Collection list to manage your entire movie collection.",
   "main": "master.js",
   "scripts": {
+    "start": "node master.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
