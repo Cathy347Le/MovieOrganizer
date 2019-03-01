@@ -53,6 +53,9 @@ Steps
 #Citations
 
 - How to get my movies cards to display inline (https://stackoverflow.com/questions/36963489/materialize-display-cards-in-one-line)
+- How to push movies to my list model (https://stackoverflow.com/questions/33049707/push-items-into-mongo-array-via-mongoose
+  )
+
 - GA's Express Twitter app
 - Zakk Fleischmann To do List
 - Inspiration was Marissa Wood's EATr app
