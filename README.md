@@ -20,7 +20,7 @@ Movie Organizer is a full-stack web application built with MongoDB, Express, Han
 
 # Deployed app
 
-The app is deployed on Heroku:
+The app is deployed on Heroku: https://moviesorganizer.herokuapp.com/
 
 # Technologies Used
 
@@ -32,12 +32,27 @@ This app was built with MongoDB, Express, Handlebars, and Node (MEHN Stack). The
 
 The app is active and running in Heroku, but if you want to run it locally
 
-1. Fork and clone this repository
+1. Clone this repository
 2. Run npm install in the foot folder
 
-3. Seed the list and movie files first, in that specfic order
+```
+$ npm install
+```
+
+3. Seed the list and movie files first, in that specific order
+
+```
+$ node db/listSeed.js
+$ node db/moveSeed.js
+```
 
 4. Start up the server
+
+```
+$ nodemon
+```
+
+5. Open your browser and go to localhost://7000
 
 #Unsolved Issues
 
