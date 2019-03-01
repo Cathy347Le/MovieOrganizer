@@ -10,7 +10,8 @@ module.exports = {
       title,
       genre,
       year,
-      rating
+      rating,
+      image
     }).then(movie => {
       res.redirect(`/movie/${movie.id}`);
     });

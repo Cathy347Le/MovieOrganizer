@@ -88,6 +88,14 @@ Movie.remove({}).then(function() {
     rating: 5.3,
     image:
       "https://image.tmdb.org/t/p/w370_and_h556_bestv2/cPmO5VZhqN4ocrgxjGaFmLeMREv.jpg"
+  });
+  Movie.create({
+    title: "Bruce Almighty",
+    genre: "Comedy",
+    year: 2003,
+    rating: 6.7,
+    image:
+      "https://image.tmdb.org/t/p/w370_and_h556_bestv2/lgYKHifMMLT8OxYObMKa8b4STsr.jpg"
   }).then(movies => {
     movies.save(err => console.log(err));
   });
