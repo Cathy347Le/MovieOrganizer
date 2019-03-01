@@ -49,3 +49,10 @@ Steps
 - Built/test update list feature
 - Built/test delete list feature
 - Get movies to show in list
+
+#Citations
+
+- How to get my movies cards to display inline (https://stackoverflow.com/questions/36963489/materialize-display-cards-in-one-line)
+- GA's Express Twitter app
+- Zakk Fleischmann To do List
+- Inspiration was Marissa Wood's EATr app
