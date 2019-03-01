@@ -22,8 +22,6 @@ module.exports = {
     List.findById(req.params.id).then(list => {
       // console.log(list);
       // console.log(list.movies[0].title);
-      // console.log(list.movies[1].title);
-      // console.log(list.movies[2].title);
       res.render("list/show", { list });
     });
   },
@@ -47,7 +45,6 @@ module.exports = {
     res.render("list/newmovie", { listId: req.params.id });
   },
   createMovie: function(req, res, next) {
-    // console.log("hi");
     // console.log(req.body);
     const createMovie = {
       title: req.body.title,

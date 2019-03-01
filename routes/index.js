@@ -5,21 +5,6 @@ const { Movie } = require("../models/list");
 const listController = require("../controllers/list");
 const movieController = require("../controllers/movie");
 
-//route for home page
-// router.get("/", function(req, res) {
-//   List.find({}).then(lists => {
-//     res.render("index", { lists });
-//   });
-// });
-
-// router.get("/", function(req, res) {
-//   List.find({}).then(lists => {
-//     Movie.find({}).then(movies => {
-//       res.render("index", { lists, movies });
-//     });
-//   });
-// });
-
 //route for home page, which displays all the movies
 router.get("/", function(req, res) {
   Movie.find({})
@@ -37,18 +22,6 @@ router.get("/rate", function(req, res) {
       res.render("index", { movies });
     });
 });
-
-// movieRating: (req, res) => {
-//   console.log("Hello");
-// }
-
-// rating: (req, res) => {
-//   Movie.find({})
-//     .sort({ rating: "asc" })
-//     .then(movies => {
-//       res.render("index", { movies });
-//     });
-// }
 
 //route for movie resource
 router.get("/movie/new", movieController.new);
