@@ -96,6 +96,38 @@ Movie.remove({}).then(function() {
     rating: 6.7,
     image:
       "https://image.tmdb.org/t/p/w370_and_h556_bestv2/lgYKHifMMLT8OxYObMKa8b4STsr.jpg"
+  });
+  Movie.create({
+    title: "Forrest Gump",
+    genre: "Drama",
+    year: 1994,
+    rating: 8.8,
+    image:
+      "https://image.tmdb.org/t/p/w370_and_h556_bestv2/yE5d3BUhE8hCnkMUJOo1QDoOGNz.jpg"
+  });
+  Movie.create({
+    title: "The Purge",
+    genre: "Horror",
+    year: 2013,
+    rating: 5.7,
+    image:
+      "https://image.tmdb.org/t/p/w370_and_h556_bestv2/tGGJOuLHX7UDlTz57sjfhW1qreP.jpg"
+  });
+  Movie.create({
+    title: "Titanic",
+    genre: "Drama",
+    year: 1997,
+    rating: 7.8,
+    image:
+      "https://image.tmdb.org/t/p/w370_and_h556_bestv2/kHXEpyfl6zqn8a6YuozZUujufXf.jpg"
+  });
+  Movie.create({
+    title: "Widows",
+    genre: "Drama",
+    year: 2018,
+    rating: 7.1,
+    image:
+      "https://image.tmdb.org/t/p/w370_and_h556_bestv2/d31SGJSaX29ba5ZUbZcesGoDE7I.jpg"
   }).then(movies => {
     movies.save(err => console.log(err));
   });
