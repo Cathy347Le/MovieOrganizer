@@ -60,6 +60,8 @@ Steps
 - Need to create new routes, controllers, and views
 - Need to work on show and delete movie within List
 
+- Add authentication
+
 #Citations
 
 - How to get my movies cards to display inline (https://stackoverflow.com/questions/36963489/materialize-display-cards-in-one-line)
