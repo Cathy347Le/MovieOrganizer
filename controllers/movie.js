@@ -5,13 +5,14 @@ module.exports = {
     res.render("movie/new");
   },
   create: (req, res) => {
-    const { title, genre, year, rating } = req.body;
+    const { title, genre, year, rating, image } = req.body;
+    // console.log(req.body);
     Movie.create({
       title,
       genre,
       year,
-      rating
-      // image
+      rating,
+      image
     }).then(movie => {
       res.redirect(`/movie/${movie.id}`);
     });

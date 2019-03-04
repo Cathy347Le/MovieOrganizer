@@ -26,11 +26,18 @@
         <label for="rating">IMDb rating:</label>
         <input type="number" name="rating" min="0" step=".1" Placeholder="0.0 out of 10.0">
     </div>
-    {{!-- <div>
-        <label for="image">Image url:</label>
-        <input type='text' name="image" placeholder="optional">
-    </div> --}}
     <div>
-        <input type="submit" value="Save">
+        <label for="image">Image url:</label>
+        <input type="url" name="image" id="image" placeholder="Insert image URL here">
+        {{!-- <input type="button" value="Show Image" id="imageButton"> --}}
+    </div>
+    <div>
+        <input type="submit" value="Save" id="addNewMovie">
     </div>
 </form>
+
+<script>
+    document.getElementById('addNewMovie').addEventListener('click', function () {
+        document.getElementById('card-photo').innerHTML = '<img src="' + document.getElementById('image').value + '" alt="Image" />';
+    });
+</script>
