@@ -48,13 +48,24 @@ Steps
 - Built/test create list feature
 - Built/test update list feature
 - Built/test delete list feature
-- Get movies to show in list
+
+- Used materialize to style home nav bar and movie cards
+- Update routes to link to the home nav bar
+- Format movie cards on the homepage
+- Add sort feature to sort movie by imbd rating
+- Update add movie form to include image url
+- Reformat movie cards to be the same height
+
+- Add and create movie within List
+- Need to create new routes, controllers, and views
+- Need to work on show and delete movie within List
 
 #Citations
 
 - How to get my movies cards to display inline (https://stackoverflow.com/questions/36963489/materialize-display-cards-in-one-line)
 - How to push movies to my list model (https://stackoverflow.com/questions/33049707/push-items-into-mongo-array-via-mongoose
   )
+- How to input image url (https://stackoverflow.com/questions/29485539/use-image-url-in-text-box-to-display-pic-after-submit)
 
 - GA's Express Twitter app
 - Zakk Fleischmann To do List
