@@ -26,9 +26,9 @@ The app is deployed on Heroku: https://moviesorganizer.herokuapp.com/
 
 This app was built with MongoDB, Express, Handlebars, and Node (MEHN Stack). The database used for live deployment is MongoDB Atlas.
 
-#The approach taken
+<!-- # The Approach Taken (insert later since you want to add an API) -->
 
-#Install and Run Locally
+# Install and Run Locally
 
 The app is active and running in Heroku, but if you want to run it locally
 
@@ -54,12 +54,12 @@ $ nodemon
 
 5. Open your browser and go to localhost://7000
 
-#Unsolved Issues
+# Unsolved Issues
 
 - Incorporating best practice to reference my movies in my list
 - Fix my movie cards on the homepage so they are all the same height
 
-#Additional Features to add:
+# Additional Features to add:
 
 - Incorporate a Movie API - www.themoviedb.org
 - Set up my new movie form to allow image url

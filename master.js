@@ -13,7 +13,7 @@ app.set("view engine", "hbs");
 hbs.registerPartials(__dirname + "/views/partials");
 app.use(parser.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
-app.use(express.static("public"));
+// app.use(express.static("public"));
 
 app.use(require("./routes/index"));
 
