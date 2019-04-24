@@ -1,5 +1,7 @@
 # MovieOrganizer
 
+![image](https://user-images.githubusercontent.com/46338135/56691763-ba73ba80-66ae-11e9-8519-2a402bd494c6.png)
+
 # Description
 
 Movie Organizer is a full-stack web application built with MongoDB, Express, Handlebars, and Node (MEHN). The app allows users to create movie lists to manage movies they love, want to watch, or just to catalogue their entire movie collection.
