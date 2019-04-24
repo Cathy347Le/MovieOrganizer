@@ -17,10 +17,10 @@ app.use(express.static("public"));
 
 app.use(require("./routes/index"));
 
-app.listen(7000, () => console.log("listening on port 7000"));
+// app.listen(7000, () => console.log("listening on port 7000"));
 
-// app.set("port", process.env.PORT || 3001);
+app.set("port", process.env.PORT || 3001);
 
-// app.listen(app.get("port"), () => {
-//   console.log(`✅ PORT: ${app.get("port")} 🌟`);
-// });
+app.listen(app.get("port"), () => {
+  console.log(`✅ PORT: ${app.get("port")} 🌟`);
+});

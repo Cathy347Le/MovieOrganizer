@@ -3,9 +3,7 @@ const mongoose = require("mongoose");
 if (process.env.NODE_ENV == "production") {
   mongoose.connect(process.env.DB_URL);
 } else {
-  mongoose.connect("mongodb://localhost/MovieOrganizer", {
-    useNewUrlParser: true
-  });
+  mongoose.connect("mongodb://localhost/thinkmovie");
 }
 
 mongoose.Promise = Promise;
