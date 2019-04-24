@@ -20,7 +20,7 @@ Movie Organizer is a full-stack web application built with MongoDB, Express, Han
 
 # Deployed app
 
-The app is deployed on Heroku: https://moviesorganizer.herokuapp.com/
+The app is deployed on Heroku: https://thinkmovie.herokuapp.com/
 
 # Technologies Used
 
@@ -52,7 +52,7 @@ $ node db/MovieSeed.js
 $ nodemon
 ```
 
-5. Open your browser and go to localhost://7000
+5. Open your browser and go to localhost://3001
 
 # Unsolved Issues
 
