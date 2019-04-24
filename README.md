@@ -42,8 +42,8 @@ $ npm install
 3. Seed the list and movie files first, in that specific order
 
 ```
-$ node db/listSeed.js
-$ node db/moveSeed.js
+$ node db/ListSeed.js
+$ node db/MovieSeed.js
 ```
 
 4. Start up the server
