@@ -1,6 +1,7 @@
 # MovieOrganizer
 
-![image](https://user-images.githubusercontent.com/46338135/56691763-ba73ba80-66ae-11e9-8519-2a402bd494c6.png)
+![image](https://user-images.githubusercontent.com/46338135/56691856-ef800d00-66ae-11e9-9695-66384b5694fb.png)
+
 
 # Description
 
