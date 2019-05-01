@@ -1,13 +1,12 @@
-# MovieOrganizer
+# ThinkMovie
 
 ![image](https://user-images.githubusercontent.com/46338135/56691856-ef800d00-66ae-11e9-9695-66384b5694fb.png)
 
-
-# Description
+### Description
 
 Movie Organizer is a full-stack web application built with MongoDB, Express, Handlebars, and Node (MEHN). The app allows users to create movie lists to manage movies they love, want to watch, or just to catalogue their entire movie collection.
 
-# Models
+### Models
 
 1. List (Full CRUD)
 
@@ -21,17 +20,17 @@ Movie Organizer is a full-stack web application built with MongoDB, Express, Han
 - Genre (only one allowed)
 - Rating (IMDb)
 
-# Deployed app
+### Deployed app
 
 The app is deployed on Heroku: https://thinkmovie.herokuapp.com/
 
-# Technologies Used
+### Technologies Used
 
 This app was built with MongoDB, Express, Handlebars, and Node (MEHN Stack). The database used for live deployment is MongoDB Atlas.
 
 <!-- # The Approach Taken (insert later since you want to add an API) -->
 
-# Install and Run Locally
+### Install and Run Locally
 
 The app is active and running in Heroku, but if you want to run it locally
 
@@ -57,12 +56,12 @@ $ nodemon
 
 5. Open your browser and go to localhost://3001
 
-# Unsolved Issues
+### Unsolved Issues
 
 - Incorporating best practice to reference my movies in my list
 - Fix my movie cards on the homepage so they are all the same height
 
-# Additional Features to add:
+### Additional Features to add:
 
 - Incorporate a Movie API - www.themoviedb.org
 - Set up my new movie form to allow image url
